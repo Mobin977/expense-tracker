@@ -8,6 +8,8 @@ A responsive expense tracking application built with **HTML, CSS, and JavaScript
 
 **Live Website:**
 
+Add your deployed URL here after deployment.
+
 ```text
 https://mobin977.github.io/expense-tracker/
 ```
@@ -24,25 +26,25 @@ https://github.com/Mobin977/expense-tracker
 
 ## ✨ Features
 
-- ➕ Add new expenses
-- 📝 Enter expense name
-- 💰 Enter expense amount
-- 🏷️ Select expense category
-- 📅 Select expense date
-- 📊 Automatically calculate total expenses
-- 🗑️ Delete individual expenses
-- ⚠️ Delete confirmation
-- 💾 Store expenses using LocalStorage
-- 🔄 Persist data after page refresh
-- 🧮 Automatic total calculation
-- 📋 Expense history
-- ⚠️ Form validation
-- 🕐 Automatically select today's date
-- 🇮🇳 Indian Rupee currency display
-- 📱 Responsive design
-- 🌐 Runs completely in the browser
-- 🚫 No backend required
-- 🔐 No user account required
+* ➕ Add new expenses
+* 📝 Enter expense name
+* 💰 Enter expense amount
+* 🏷️ Select expense category
+* 📅 Select expense date
+* 📊 Automatically calculate total expenses
+* 🗑️ Delete individual expenses
+* ⚠️ Delete confirmation
+* 💾 Store expenses using LocalStorage
+* 🔄 Persist data after page refresh
+* 🧮 Automatic total calculation
+* 📋 Expense history
+* ⚠️ Form validation
+* 🕐 Automatically select today's date
+* 🇮🇳 Indian Rupee currency display
+* 📱 Responsive design
+* 🌐 Runs completely in the browser
+* 🚫 No backend required
+* 🔐 No user account required
 
 ---
 
@@ -50,22 +52,22 @@ https://github.com/Mobin977/expense-tracker
 
 ### Frontend
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+* HTML5
+* CSS3
+* JavaScript (ES6+)
 
 ### Browser APIs
 
-- LocalStorage API
-- DOM API
+* LocalStorage API
+* DOM API
 
 ### Tools
 
-- VS Code
-- Git
-- GitHub
-- Browser Developer Tools
-- GitHub Pages
+* VS Code
+* Git
+* GitHub
+* Browser Developer Tools
+* GitHub Pages
 
 ---
 
@@ -265,15 +267,15 @@ The total expense is calculated using JavaScript's `reduce()` method.
 
 ```javascript
 const total = expenses.reduce((sum, expense) => {
-  return sum + expense.amount;
+    return sum + expense.amount;
 }, 0);
 ```
 
 The total is automatically updated whenever:
 
-- A new expense is added
-- An expense is deleted
-- The application loads
+* A new expense is added
+* An expense is deleted
+* The application loads
 
 Example:
 
@@ -291,27 +293,27 @@ Total         ₹850
 
 This project demonstrates several important JavaScript concepts:
 
-- DOM manipulation
-- Event listeners
-- Functions
-- Arrays
-- Objects
-- Array methods
-- `reduce()`
-- `filter()`
-- `forEach()`
-- Template literals
-- Form handling
-- Input validation
-- JSON
-- LocalStorage
-- `JSON.stringify()`
-- `JSON.parse()`
-- Dynamic HTML generation
-- Conditional statements
-- Date handling
-- Number conversion
-- Browser APIs
+* DOM manipulation
+* Event listeners
+* Functions
+* Arrays
+* Objects
+* Array methods
+* `reduce()`
+* `filter()`
+* `forEach()`
+* Template literals
+* Form handling
+* Input validation
+* JSON
+* LocalStorage
+* `JSON.stringify()`
+* `JSON.parse()`
+* Dynamic HTML generation
+* Conditional statements
+* Date handling
+* Number conversion
+* Browser APIs
 
 ---
 
@@ -411,10 +413,10 @@ The application is designed to work across different screen sizes.
 
 ### Supported Devices
 
-- 💻 Desktop
-- 💻 Laptop
-- 📱 Mobile
-- 📱 Tablet
+* 💻 Desktop
+* 💻 Laptop
+* 📱 Mobile
+* 📱 Tablet
 
 CSS media queries are used to adapt the expense form and expense list for smaller screens.
 
@@ -567,21 +569,21 @@ By building this project, I learned how to create a browser-based expense manage
 
 The major learning areas were:
 
-- Working with the DOM
-- Handling HTML forms
-- Creating dynamic elements
-- Managing arrays and objects
-- Using JavaScript array methods
-- Calculating totals with `reduce()`
-- Removing data with `filter()`
-- Persisting application data
-- Using LocalStorage
-- Converting objects to JSON
-- Parsing JSON data
-- Handling dates
-- Validating user input
-- Creating responsive layouts
-- Building a real-world frontend application
+* Working with the DOM
+* Handling HTML forms
+* Creating dynamic elements
+* Managing arrays and objects
+* Using JavaScript array methods
+* Calculating totals with `reduce()`
+* Removing data with `filter()`
+* Persisting application data
+* Using LocalStorage
+* Converting objects to JSON
+* Parsing JSON data
+* Handling dates
+* Validating user input
+* Creating responsive layouts
+* Building a real-world frontend application
 
 ---
 
@@ -589,22 +591,22 @@ The major learning areas were:
 
 Possible future improvements include:
 
-- 📊 Expense charts
-- 🔍 Search expenses
-- 🏷️ Category filtering
-- 📅 Monthly expense reports
-- 📈 Spending analytics
-- ✏️ Edit existing expenses
-- 🗓️ Filter by date
-- 🌙 Dark mode
-- 📤 Export expenses to CSV
-- 📥 Import expenses from CSV
-- 💱 Multiple currencies
-- 🎯 Monthly spending limits
-- 🔔 Budget notifications
-- 📱 Progressive Web App support
-- ☁️ Cloud database synchronization
-- 👤 User authentication
+* 📊 Expense charts
+* 🔍 Search expenses
+* 🏷️ Category filtering
+* 📅 Monthly expense reports
+* 📈 Spending analytics
+* ✏️ Edit existing expenses
+* 🗓️ Filter by date
+* 🌙 Dark mode
+* 📤 Export expenses to CSV
+* 📥 Import expenses from CSV
+* 💱 Multiple currencies
+* 🎯 Monthly spending limits
+* 🔔 Budget notifications
+* 📱 Progressive Web App support
+* ☁️ Cloud database synchronization
+* 👤 User authentication
 
 ---
 
@@ -638,24 +640,24 @@ Responsive Web Application
 
 ### Completed Features
 
-- ✅ HTML structure
-- ✅ Responsive CSS
-- ✅ Expense form
-- ✅ Expense name
-- ✅ Expense amount
-- ✅ Expense category
-- ✅ Expense date
-- ✅ Add expense
-- ✅ Display expenses
-- ✅ Total expense calculation
-- ✅ Delete expense
-- ✅ Delete confirmation
-- ✅ LocalStorage integration
-- ✅ Data persistence
-- ✅ Form validation
-- ✅ Date formatting
-- ✅ Responsive design
-- ✅ Indian Rupee currency display
+* ✅ HTML structure
+* ✅ Responsive CSS
+* ✅ Expense form
+* ✅ Expense name
+* ✅ Expense amount
+* ✅ Expense category
+* ✅ Expense date
+* ✅ Add expense
+* ✅ Display expenses
+* ✅ Total expense calculation
+* ✅ Delete expense
+* ✅ Delete confirmation
+* ✅ LocalStorage integration
+* ✅ Data persistence
+* ✅ Form validation
+* ✅ Date formatting
+* ✅ Responsive design
+* ✅ Indian Rupee currency display
 
 ---
 
