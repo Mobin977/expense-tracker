@@ -22,19 +22,19 @@ https://github.com/Mobin977/expense-tracker
 
 ## ✨ Features
 
-* ➕ Add new expenses
-* 💰 Enter expense amount
-* 🏷️ Select expense category
-* 📅 Select expense date
-* 📋 View expense history
-* 🗑️ Delete expenses
-* 🧮 Automatically calculate total expenses
-* 💾 Store expenses using LocalStorage
-* 🔄 Data persists after page refresh
-* ✅ Form validation
-* 📱 Fully responsive design
-* 🌐 Indian Rupee (₹) currency formatting
-* 🎨 Clean and modern user interface
+- ➕ Add new expenses
+- 💰 Enter expense amount
+- 🏷️ Select expense category
+- 📅 Select expense date
+- 📋 View expense history
+- 🗑️ Delete expenses
+- 🧮 Automatically calculate total expenses
+- 💾 Store expenses using LocalStorage
+- 🔄 Data persists after page refresh
+- ✅ Form validation
+- 📱 Fully responsive design
+- 🌐 Indian Rupee (₹) currency formatting
+- 🎨 Clean and modern user interface
 
 ---
 
@@ -42,20 +42,20 @@ https://github.com/Mobin977/expense-tracker
 
 ### Frontend
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
 ### Browser Storage
 
-* LocalStorage API
+- LocalStorage API
 
 ### Development Tools
 
-* Visual Studio Code
-* Git
-* GitHub
-* GitHub Pages
+- Visual Studio Code
+- Git
+- GitHub
+- GitHub Pages
 
 ---
 
@@ -160,14 +160,14 @@ After clicking **Add Expense**, the expense is added to the expense history.
 
 The application provides multiple categories:
 
-* 🍔 Food
-* 🛍️ Shopping
-* 🚗 Transport
-* 💡 Bills
-* 🎬 Entertainment
-* 📚 Education
-* 🏥 Health
-* 📦 Other
+- 🍔 Food
+- 🛍️ Shopping
+- 🚗 Transport
+- 💡 Bills
+- 🎬 Entertainment
+- 📚 Education
+- 🏥 Health
+- 📦 Other
 
 ---
 
@@ -212,9 +212,9 @@ Are you sure you want to delete this expense?
 
 If the user confirms, the expense is removed from:
 
-* The user interface
-* The JavaScript expense array
-* LocalStorage
+- The user interface
+- The JavaScript expense array
+- LocalStorage
 
 The total amount is also recalculated automatically.
 
@@ -227,17 +227,13 @@ This project uses the browser's **LocalStorage API** to persist expense informat
 Expenses are stored using:
 
 ```javascript
-localStorage.setItem(
-    "expenses",
-    JSON.stringify(expenses)
-);
+localStorage.setItem("expenses", JSON.stringify(expenses));
 ```
 
 When the application starts, saved expenses are retrieved using:
 
 ```javascript
-let expenses =
-    JSON.parse(localStorage.getItem("expenses")) || [];
+let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 ```
 
 ---
@@ -284,21 +280,21 @@ Multiple expenses are stored inside an array:
 
 ```javascript
 [
-    {
-        id: 1,
-        name: "Grocery",
-        amount: 500,
-        category: "Food",
-        date: "2026-09-13"
-    },
-    {
-        id: 2,
-        name: "Bus",
-        amount: 100,
-        category: "Transport",
-        date: "2026-09-13"
-    }
-]
+  {
+    id: 1,
+    name: "Grocery",
+    amount: 500,
+    category: "Food",
+    date: "2026-09-13",
+  },
+  {
+    id: 2,
+    name: "Bus",
+    amount: 100,
+    category: "Transport",
+    date: "2026-09-13",
+  },
+];
 ```
 
 ---
@@ -309,15 +305,14 @@ The total expense amount is calculated using JavaScript's `reduce()` method.
 
 ```javascript
 const total = expenses.reduce((sum, expense) => {
-    return sum + expense.amount;
+  return sum + expense.amount;
 }, 0);
 ```
 
 The result is displayed using Indian Rupee formatting:
 
 ```javascript
-totalExpensesElement.textContent =
-    `₹${total.toFixed(2)}`;
+totalExpensesElement.textContent = `₹${total.toFixed(2)}`;
 ```
 
 Example:
@@ -338,8 +333,8 @@ The name cannot be empty.
 
 ```javascript
 if (!name) {
-    alert("Please enter an expense name.");
-    return;
+  alert("Please enter an expense name.");
+  return;
 }
 ```
 
@@ -349,8 +344,8 @@ The amount must be greater than zero.
 
 ```javascript
 if (isNaN(amount) || amount <= 0) {
-    alert("Please enter a valid amount.");
-    return;
+  alert("Please enter a valid amount.");
+  return;
 }
 ```
 
@@ -360,8 +355,8 @@ A category must be selected.
 
 ```javascript
 if (!category) {
-    alert("Please select a category.");
-    return;
+  alert("Please select a category.");
+  return;
 }
 ```
 
@@ -371,8 +366,8 @@ A valid date must be selected.
 
 ```javascript
 if (!date) {
-    alert("Please select a date.");
-    return;
+  alert("Please select a date.");
+  return;
 }
 ```
 
@@ -384,9 +379,9 @@ Expense dates are displayed using the Indian locale.
 
 ```javascript
 date.toLocaleDateString("en-IN", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric"
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
 });
 ```
 
@@ -405,60 +400,60 @@ This project helped practice several important JavaScript concepts.
 ### DOM Manipulation
 
 ```javascript
-document.getElementById()
+document.getElementById();
 ```
 
 ### Event Handling
 
 ```javascript
-expenseForm.addEventListener()
+expenseForm.addEventListener();
 ```
 
 ### Arrays
 
 ```javascript
-expenses.push()
-expenses.filter()
+expenses.push();
+expenses.filter();
 ```
 
 ### Array Methods
 
 ```javascript
-reduce()
-forEach()
-filter()
+reduce();
+forEach();
+filter();
 ```
 
 ### Objects
 
 ```javascript
 const newExpense = {
-    id,
-    name,
-    amount,
-    category,
-    date
+  id,
+  name,
+  amount,
+  category,
+  date,
 };
 ```
 
 ### LocalStorage
 
 ```javascript
-localStorage.setItem()
-localStorage.getItem()
+localStorage.setItem();
+localStorage.getItem();
 ```
 
 ### JSON
 
 ```javascript
-JSON.stringify()
-JSON.parse()
+JSON.stringify();
+JSON.parse();
 ```
 
 ### Template Literals
 
 ```javascript
-`₹${expense.amount.toFixed(2)}`
+`₹${expense.amount.toFixed(2)}`;
 ```
 
 ### Functions
@@ -510,18 +505,18 @@ The application is designed to work across different screen sizes.
 
 Supported devices include:
 
-* 💻 Desktop
-* 💻 Laptop
-* 📱 Mobile
-* 📱 Tablet
+- 💻 Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📱 Tablet
 
 CSS media queries are used to adjust the layout.
 
 ```css
 @media (max-width: 700px) {
-    #expense-form {
-        grid-template-columns: 1fr;
-    }
+  #expense-form {
+    grid-template-columns: 1fr;
+  }
 }
 ```
 
@@ -533,14 +528,14 @@ On smaller screens, the two-column form changes into a single-column layout.
 
 The application uses:
 
-* Clean card-based layout
-* Responsive form
-* Rounded corners
-* Simple color scheme
-* Expense category badges
-* Delete buttons
-* Mobile-friendly layout
-* Clear typography
+- Clean card-based layout
+- Responsive form
+- Rounded corners
+- Simple color scheme
+- Expense category badges
+- Delete buttons
+- Mobile-friendly layout
+- Clear typography
 
 ---
 
@@ -618,20 +613,20 @@ Folder: / (root)
 
 While building this project, I practiced:
 
-* HTML form creation
-* CSS responsive layouts
-* JavaScript DOM manipulation
-* JavaScript event handling
-* Array methods
-* Objects and arrays
-* LocalStorage
-* JSON serialization
-* Form validation
-* Dynamic HTML rendering
-* Date formatting
-* Responsive web design
-* Git and GitHub
-* GitHub Pages deployment
+- HTML form creation
+- CSS responsive layouts
+- JavaScript DOM manipulation
+- JavaScript event handling
+- Array methods
+- Objects and arrays
+- LocalStorage
+- JSON serialization
+- Form validation
+- Dynamic HTML rendering
+- Date formatting
+- Responsive web design
+- Git and GitHub
+- GitHub Pages deployment
 
 ---
 
@@ -639,21 +634,21 @@ While building this project, I practiced:
 
 Possible future improvements include:
 
-* 📊 Expense charts
-* 🔎 Search expenses
-* 🔽 Filter by category
-* 📅 Filter by date
-* ✏️ Edit expenses
-* 📈 Monthly expense reports
-* 📊 Category-wise spending analysis
-* 🌙 Dark mode
-* 📤 Export expenses to CSV
-* 📥 Import expenses
-* 💰 Monthly budget tracking
-* 🔔 Budget alerts
-* 📱 Progressive Web App support
-* ☁️ Cloud database integration
-* 👤 User authentication
+- 📊 Expense charts
+- 🔎 Search expenses
+- 🔽 Filter by category
+- 📅 Filter by date
+- ✏️ Edit expenses
+- 📈 Monthly expense reports
+- 📊 Category-wise spending analysis
+- 🌙 Dark mode
+- 📤 Export expenses to CSV
+- 📥 Import expenses
+- 💰 Monthly budget tracking
+- 🔔 Budget alerts
+- 📱 Progressive Web App support
+- ☁️ Cloud database integration
+- 👤 User authentication
 
 ---
 
