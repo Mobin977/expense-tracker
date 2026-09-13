@@ -8,10 +8,9 @@ A responsive expense tracking application built with **HTML, CSS, and JavaScript
 
 **Live Website:**
 
-```text
-https://mobin977.github.io/expense-tracker/
-```
 
+```
+https://mobin977.github.io/expense-tracker/
 ---
 
 ## 📂 GitHub Repository
