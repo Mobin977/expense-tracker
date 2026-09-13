@@ -1,0 +1,339 @@
+/* ================================
+   Expense Tracker - Global Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* ================================
+   Main Container
+================================ */
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ================================
+   Header
+================================ */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+header p {
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* ================================
+   Summary Section
+================================ */
+
+.summary {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.summary h2 {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+#total-expenses {
+    font-size: 36px;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+/* ================================
+   Expense Form
+================================ */
+
+.expense-form {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.expense-form h2,
+.expense-list-section h2 {
+    font-size: 22px;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   Form
+================================ */
+
+#expense-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+
+/* ================================
+   Add Expense Button
+================================ */
+
+#add-expense-btn {
+    grid-column: 1 / -1;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 20px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#add-expense-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+#add-expense-btn:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   Expense List Section
+================================ */
+
+.expense-list-section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#expense-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ================================
+   Empty Message
+================================ */
+
+#empty-message {
+    text-align: center;
+    padding: 25px;
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+/* ================================
+   Expense Item
+================================ */
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fafafa;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.expense-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transform: translateY(-1px);
+}
+
+/* ================================
+   Expense Information
+================================ */
+
+.expense-info {
+    flex: 1;
+}
+
+.expense-info h3 {
+    font-size: 17px;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.expense-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.expense-category {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 20px;
+    background: #e0e7ff;
+    color: #3730a3;
+    font-weight: bold;
+}
+
+/* ================================
+   Expense Amount
+================================ */
+
+.expense-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #dc2626;
+    white-space: nowrap;
+}
+
+/* ================================
+   Delete Button
+================================ */
+
+.delete-btn {
+    border: none;
+    border-radius: 7px;
+    padding: 9px 12px;
+    background: #fee2e2;
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    #expense-form {
+        grid-template-columns: 1fr;
+    }
+
+    #add-expense-btn {
+        grid-column: auto;
+    }
+
+    .expense-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .expense-amount {
+        font-size: 17px;
+    }
+
+    .delete-btn {
+        width: 100%;
+    }
+}
+
+/* ================================
+   Small Mobile Screens
+================================ */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .summary,
+    .expense-form,
+    .expense-list-section {
+        padding: 18px;
+    }
+
+    #total-expenses {
+        font-size: 30px;
+    }
+
+    .expense-form h2,
+    .expense-list-section h2 {
+        font-size: 20px;
+    }
+}
